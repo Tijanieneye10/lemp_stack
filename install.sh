@@ -26,9 +26,9 @@ source "${SCRIPT_DIR}/modules/configuration.sh"
 
 # Main installation function
 main() {
-    # Get PHP version from command line argument
+    # Get PHP version from command line argument, if not given use 8.4
     PHP_VERSION="${1:-8.4}"
-    
+
     # Validate PHP version before processing anything
     validate_php_version "$PHP_VERSION"
     
