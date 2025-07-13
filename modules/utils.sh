@@ -22,6 +22,18 @@ warning() {
     echo -e "${YELLOW}[WARNING]${NC} $1"
 }
 
+# Validate PHP version
+validate_php_version() {
+    local version="$1"
+    case "$version" in
+        "8.2"|"8.3"|"8.4")
+            ;;
+        *)
+            error "Invalid PHP version: $version. Supported versions are: 8.2, 8.3, 8.4"
+            ;;
+    esac
+}
+
 # Check prerequisites
 check_prerequisites() {
     log "Checking prerequisites..."

@@ -46,6 +46,13 @@ else
     exit 1
 fi
 
+if declare -f validate_php_version > /dev/null; then
+    echo "✅ validate_php_version function available"
+else
+    echo "❌ validate_php_version function not found"
+    exit 1
+fi
+
 # Test installation functions
 if declare -f install_nginx > /dev/null; then
     echo "✅ install_nginx function available"
@@ -82,6 +89,32 @@ else
     exit 1
 fi
 
+# Test PHP version validation
+echo "Testing PHP version validation..."
+
+# Test valid versions
+for version in "8.2" "8.3" "8.4"; do
+    if validate_php_version "$version" 2>/dev/null; then
+        echo "✅ PHP version $version validation works"
+    else
+        echo "❌ PHP version $version validation failed"
+        exit 1
+    fi
+done
+
+# Test invalid version (should fail)
+echo "Testing invalid PHP version (should fail gracefully)..."
+if (validate_php_version "8.1" 2>/dev/null); then
+    echo "❌ Invalid PHP version should have been rejected"
+    exit 1
+else
+    echo "✅ Invalid PHP version correctly rejected"
+fi
+
 echo ""
 echo "🎉 All tests passed! Modular structure is working correctly."
-echo "You can now run: sudo ./install.sh" 
+echo "Usage examples:"
+echo "  sudo ./install.sh        # Install with PHP 8.4 (default)"
+echo "  sudo ./install.sh 8.2    # Install with PHP 8.2"
+echo "  sudo ./install.sh 8.3    # Install with PHP 8.3"
+echo "  sudo ./install.sh 8.4    # Install with PHP 8.4" 

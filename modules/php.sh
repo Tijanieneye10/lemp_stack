@@ -1,37 +1,39 @@
 #!/bin/bash
 
-# PHP 8.4 installation and configuration module
+# PHP installation and configuration module
 
-# Install PHP 8.4 and extensions
+# Install PHP and common extensions
 install_php() {
+    local php_version="$1"
+    
     log "Adding PHP repository..."
     add-apt-repository ppa:ondrej/php -y
     apt update -y
     
-    log "Installing PHP 8.4 and extensions..."
+    log "Installing PHP $php_version and extensions..."
     apt install -y \
-        php8.4 \
-        php8.4-fpm \
-        php8.4-mysql \
-        php8.4-curl \
-        php8.4-gd \
-        php8.4-mbstring \
-        php8.4-xml \
-        php8.4-zip \
-        php8.4-bcmath \
-        php8.4-soap \
-        php8.4-intl \
-        php8.4-readline \
-        php8.4-ldap \
-        php8.4-msgpack \
-        php8.4-igbinary \
-        php8.4-redis \
-        php8.4-memcached \
-        php8.4-xdebug
+        php${php_version} \
+        php${php_version}-fpm \
+        php${php_version}-mysql \
+        php${php_version}-curl \
+        php${php_version}-gd \
+        php${php_version}-mbstring \
+        php${php_version}-xml \
+        php${php_version}-zip \
+        php${php_version}-bcmath \
+        php${php_version}-soap \
+        php${php_version}-intl \
+        php${php_version}-readline \
+        php${php_version}-ldap \
+        php${php_version}-msgpack \
+        php${php_version}-igbinary \
+        php${php_version}-redis \
+        php${php_version}-memcached \
+        php${php_version}-xdebug
     
     # Start and enable PHP-FPM service
-    systemctl start php8.4-fpm
-    systemctl enable php8.4-fpm
+    systemctl start php${php_version}-fpm
+    systemctl enable php${php_version}-fpm
     
-    log "PHP 8.4 installed and configured"
+    log "PHP $php_version installed and configured"
 } 

@@ -7,7 +7,13 @@ A comprehensive bash script to automatically install and configure a LEMP (Linux
 Run this command on your Ubuntu server to install the LEMP stack:
 
 ```bash
+# Install with PHP 8.4 (default)
 curl -fsSL https://raw.githubusercontent.com/tijaniusman/lemp_stack/main/install.sh | sudo bash
+
+# Install with specific PHP version
+curl -fsSL https://raw.githubusercontent.com/tijaniusman/lemp_stack/main/install.sh | sudo bash -s 8.2
+curl -fsSL https://raw.githubusercontent.com/tijaniusman/lemp_stack/main/install.sh | sudo bash -s 8.3
+curl -fsSL https://raw.githubusercontent.com/tijaniusman/lemp_stack/main/install.sh | sudo bash -s 8.4
 ```
 
 ## 📋 What's Included
@@ -15,7 +21,7 @@ curl -fsSL https://raw.githubusercontent.com/tijaniusman/lemp_stack/main/install
 This script installs and configures:
 
 - **Nginx** - Web server
-- **PHP 8.4** - Latest PHP version with essential extensions
+- **PHP 8.2/8.3/8.4** - Choose your PHP version (default: 8.4)
 - **MySQL 8** - Database server
 - **Composer** - PHP dependency manager
 
@@ -59,6 +65,24 @@ The script is organized into modular components for better maintainability:
 - Internet connection
 - At least 1GB of available disk space
 
+## 🐘 PHP Version Selection
+
+The script supports PHP versions 8.2, 8.3, and 8.4:
+
+- **Default**: PHP 8.4 (if no version specified)
+- **8.2**: Stable version with long-term support
+- **8.3**: Latest stable version
+- **8.4**: Latest development version
+
+**Usage:**
+
+```bash
+sudo ./install.sh        # PHP 8.4 (default)
+sudo ./install.sh 8.2    # PHP 8.2
+sudo ./install.sh 8.3    # PHP 8.3
+sudo ./install.sh 8.4    # PHP 8.4
+```
+
 ## 📦 Manual Installation
 
 If you prefer to install manually:
@@ -77,8 +101,15 @@ If you prefer to install manually:
    ```
 
 3. **Run the installation script:**
+
    ```bash
+   # Install with PHP 8.4 (default)
    sudo ./install.sh
+
+   # Install with specific PHP version
+   sudo ./install.sh 8.2
+   sudo ./install.sh 8.3
+   sudo ./install.sh 8.4
    ```
 
 ## 🔧 Post-Installation Steps
