@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# Contains logging, error handling, and common checks
-
 # Output colors
 RED='\033[0;31m'
 GREEN='\033[0;32m'

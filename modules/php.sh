@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# PHP installation and configuration module
-
-# Install PHP and common extensions
 install_php() {
     local php_version="$1"
     

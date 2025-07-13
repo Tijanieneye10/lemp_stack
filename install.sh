@@ -14,7 +14,6 @@ set -e
 # Get the directory where this script is located
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-# Source all module files
 source "${SCRIPT_DIR}/modules/utils.sh"
 source "${SCRIPT_DIR}/modules/nginx.sh"
 source "${SCRIPT_DIR}/modules/php.sh"
@@ -22,7 +21,7 @@ source "${SCRIPT_DIR}/modules/mysql.sh"
 source "${SCRIPT_DIR}/modules/composer.sh"
 source "${SCRIPT_DIR}/modules/configuration.sh"
 
-# Main installation function
+
 main() {
     # Get PHP version from command line argument, if not given use 8.4
     PHP_VERSION="${1:-8.4}"
@@ -64,5 +63,5 @@ main() {
     
 }
 
-# Run main function
+# Run main function and pass all arguments
 main "$@"

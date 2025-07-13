@@ -2,7 +2,6 @@
 
 # Configuration module for Nginx, PHP integration, and final setup
 
-# Configure Nginx for PHP
 configure_nginx_php() {
     local php_version="$1"
     

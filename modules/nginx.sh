@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Nginx installation and configuration module
-
-# Install Nginx
 install_nginx() {
     log "Installing Nginx..."
     

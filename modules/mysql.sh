@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# MySQL 8 installation and configuration module
-
-# Install MySQL 8
 install_mysql() {
     log "Installing MySQL 8..."
     

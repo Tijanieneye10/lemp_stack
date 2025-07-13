@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Composer installation module
-
-# Install Composer
 install_composer() {
     log "Installing Composer..."
     
