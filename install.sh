@@ -47,7 +47,6 @@ app-get update
 log "Installing common dependencies..."
 
 apt-get install -y \
-    curl \
     wget \
     gnupg \
     lsb-release \
