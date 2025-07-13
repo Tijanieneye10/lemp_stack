@@ -1,6 +1,3 @@
-log "Starting LEMP Stack installation..."
-exit 1;
-
 main() {
     # Get PHP version from command line argument, if not given use 8.4
     PHP_VERSION="${1:-8.4}"

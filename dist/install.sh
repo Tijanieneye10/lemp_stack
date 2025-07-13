@@ -217,8 +217,6 @@ show_final_instructions() {
 
     log "Installation completed successfully!"
 } 
-log "Starting LEMP Stack installation..."
-exit 1;
 
 main() {
     # Get PHP version from command line argument, if not given use 8.4
