@@ -22,4 +22,4 @@ jobs:
         with:
           commit_message: Apply automatic changes
           branch: main
-          file_pattern: '*.txt *.json *.sh'
+          file_pattern: '*.sh'
