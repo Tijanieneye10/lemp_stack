@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Test script to verify modular structure
-# This script tests that all modules can be sourced and functions are available
-
 set -e
 
 # Get the directory where this script is located
