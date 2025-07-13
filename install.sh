@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # LEMP Stack Installation Script
-# Installs PHP 8.2/8.3/8.4, MySQL 8, Composer, and Nginx on Ubuntu/Debian Server
 # Author: Tijani Usman
 # Version: 1.0.0
 # Date: 2025-07-13
@@ -9,7 +8,6 @@
 # Description: This script installs PHP 8.2/8.3/8.4, MySQL 8, Composer, and Nginx on Ubuntu/Debian Server
 # Prerequisites: Ubuntu/Debian Server
 # Dependencies: Nginx, PHP 8.2/8.3/8.4, MySQL 8, Composer
-# Usage: ./install.sh [8.2|8.3|8.4]
 
 set -e
 
