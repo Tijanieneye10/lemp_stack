@@ -7,7 +7,7 @@ A comprehensive bash script to automatically install and configure a LEMP (Linux
 Run this command on your Ubuntu server to install the LEMP stack:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/tijaniusman/lemp_stack/main/install.sh | sudo bash
+curl -fsSL https://https://raw.githubusercontent.com/tijanieneye10/lemp_stack/main/install.sh | sudo bash
 ```
 
 ## 📋 What's Included
