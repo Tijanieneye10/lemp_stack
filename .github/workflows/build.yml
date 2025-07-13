@@ -24,4 +24,4 @@ jobs:
         with:
           commit_message: Apply automatic changes
           branch: main
-          file_pattern: '*.sh'
+          file_pattern: '**/*.sh dist/install.sh'
