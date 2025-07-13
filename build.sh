@@ -29,7 +29,7 @@ echo "" >> "$OUTPUT"
 cat modules/configuration.sh >> "$OUTPUT"
 echo "" >> "$OUTPUT"
 
-# Finally, append the main install logic (that used to source the modules)
+# Finally, append the main install logic (that used to source the all modules)
 cat main.sh >> "$OUTPUT"
 
 chmod +x "$OUTPUT"
