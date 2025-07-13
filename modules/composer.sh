@@ -11,4 +11,4 @@ install_composer() {
     fi
     
     log "Composer installed successfully"
-} 
+}
