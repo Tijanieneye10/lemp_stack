@@ -1,5 +1,3 @@
-#!/bin/bash
-
 install_php() {
     local php_version="$1"
     

@@ -1,5 +1,3 @@
-#!/bin/bash
-
 install_mysql() {
     log "Installing MySQL 8..."
     

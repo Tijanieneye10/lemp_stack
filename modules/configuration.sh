@@ -1,5 +1,3 @@
-#!/bin/bash
-
 # Configuration module for Nginx, PHP integration, and final setup
 
 configure_nginx_php() {

@@ -1,5 +1,3 @@
-#!/bin/bash
-
 install_composer() {
     log "Installing Composer..."
     

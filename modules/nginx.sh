@@ -1,5 +1,3 @@
-#!/bin/bash
-
 install_nginx() {
     log "Installing Nginx..."
     
