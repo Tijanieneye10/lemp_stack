@@ -8,12 +8,12 @@ Run this command on your Ubuntu server to install the LEMP stack:
 
 ```bash
 # Install with PHP 8.4 (default)
-curl -fsSL https://raw.githubusercontent.com/tijaniusman/lemp_stack/main/install.sh | sudo bash
+curl -fsSL https://raw.githubusercontent.com/tijanieneye10/lemp_stack/main/install.sh | sudo bash
 
 # Install with specific PHP version
-curl -fsSL https://raw.githubusercontent.com/tijaniusman/lemp_stack/main/install.sh | sudo bash -s 8.2
-curl -fsSL https://raw.githubusercontent.com/tijaniusman/lemp_stack/main/install.sh | sudo bash -s 8.3
-curl -fsSL https://raw.githubusercontent.com/tijaniusman/lemp_stack/main/install.sh | sudo bash -s 8.4
+curl -fsSL https://raw.githubusercontent.com/tijanieneye10/lemp_stack/main/install.sh | sudo bash -s 8.2
+curl -fsSL https://raw.githubusercontent.com/tijanieneye10/lemp_stack/main/install.sh | sudo bash -s 8.3
+curl -fsSL https://raw.githubusercontent.com/tijanieneye10/lemp_stack/main/install.sh | sudo bash -s 8.4
 ```
 
 ## 📋 What's Included
@@ -90,7 +90,7 @@ If you prefer to install manually:
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/tijaniusman/lemp_stack.git
+   git clone https://github.com/tijanieneye10/lemp_stack.git
    cd lemp_stack
    ```
 
@@ -202,7 +202,7 @@ This project is licensed under the MIT License.
 
 **Tijani Usman**
 
-- GitHub: [@tijaniusman](https://github.com/tijaniusman)
+- GitHub: [@tijanieneye10](https://github.com/tijanieneye10)
 - Version: 1.0.0
 - Date: 2025-07-13
 
