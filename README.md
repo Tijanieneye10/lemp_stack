@@ -8,12 +8,12 @@ Run this command on your Ubuntu server to install the LEMP stack:
 
 ```bash
 # Install with PHP 8.4 (default)
-curl -fsSL https://raw.githubusercontent.com/tijanieneye10/lemp_stack/main/install.sh | sudo bash
+curl -fsSL https://raw.githubusercontent.com/tijanieneye10/lemp_stack/main/dist/install.sh | sudo bash
 
 # Install with specific PHP version
-curl -fsSL https://raw.githubusercontent.com/tijanieneye10/lemp_stack/main/install.sh | sudo bash -s 8.2
-curl -fsSL https://raw.githubusercontent.com/tijanieneye10/lemp_stack/main/install.sh | sudo bash -s 8.3
-curl -fsSL https://raw.githubusercontent.com/tijanieneye10/lemp_stack/main/install.sh | sudo bash -s 8.4
+curl -fsSL https://raw.githubusercontent.com/tijanieneye10/lemp_stack/main/dist/install.sh | sudo bash -s 8.2
+curl -fsSL https://raw.githubusercontent.com/tijanieneye10/lemp_stack/main/dist/install.sh | sudo bash -s 8.3
+curl -fsSL https://raw.githubusercontent.com/tijanieneye10/lemp_stack/main/dist/install.sh | sudo bash -s 8.4
 ```
 
 ## 📋 What's Included
