@@ -36,17 +36,17 @@ if [ "$EUID" -ne 0 ]; then
     error "Please run as root"
 fi
 
-#check if app-get package manager is installed
+#check if apt package manager is installed
 if ! command -v apt &> /dev/null; then
     error "apt package manager not found"
 fi
 
 # install common linux packages
-app-get update
+apt update
 
 log "Installing common dependencies..."
 
-apt-get install -y \
+apt install -y \
     wget \
     gnupg \
     lsb-release \
@@ -57,7 +57,7 @@ apt-get install -y \
 
 # install nginx and set it process
 log "Installing Nginx..."
-apt-get install -y nginx
+apt install -y nginx
 
 
 systemctl start nginx
@@ -66,10 +66,10 @@ systemctl enable nginx
 # Install PHP 8.4 and common extensions
 log "Adding PHP repository..."
 add-apt-repository ppa:ondrej/php -y
-apt-get update -y
+apt update -y
 
 log "Installing PHP 8.4 and extensions..."
-apt-get install -y \
+apt install -y \
     php8.4 \
     php8.4-fpm \
     php8.4-mysql \
