@@ -1,0 +1,26 @@
+name: Build Install Script
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Make build script executable
+        run: chmod +x ./build.sh
+
+      - name: Run build script
+        run: ./build.sh
+
+      - name: Commit built install.sh
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add dist/install.sh
+          git commit -m "chore: update install.sh" || echo "No changes"
+          git push
