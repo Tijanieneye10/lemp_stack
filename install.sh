@@ -142,3 +142,19 @@ server {
     }
 }
 EOF
+
+# Test Nginx configuration
+nginx -t
+
+# Reload Nginx
+systemctl reload nginx
+
+log "Creating test PHP file..."
+cat > /var/www/html/index.php << 'EOF'
+<?php
+phpinfo();
+?>
+EOF
+
+chown -R www-data:www-data /var/www/html
+chmod -R 755 /var/www/html
