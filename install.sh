@@ -158,3 +158,10 @@ EOF
 
 chown -R www-data:www-data /var/www/html
 chmod -R 755 /var/www/html
+
+# Configure MySQL security (interactive)
+log "Configuring MySQL security..."
+warning "You will need to configure MySQL security manually after this script completes."
+warning "Run: sudo mysql_secure_installation"
+
+log "Installation completed successfully!"
