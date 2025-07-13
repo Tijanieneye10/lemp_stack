@@ -7,7 +7,7 @@ A comprehensive bash script to automatically install and configure a LEMP (Linux
 Run this command on your Ubuntu server to install the LEMP stack:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/tijanieneye10/lemp_stack/main/install.sh | sudo bash
+curl -fsSL https://raw.githubusercontent.com/tijaniusman/lemp_stack/main/install.sh | sudo bash
 ```
 
 ## 📋 What's Included
@@ -18,6 +18,19 @@ This script installs and configures:
 - **PHP 8.4** - Latest PHP version with essential extensions
 - **MySQL 8** - Database server
 - **Composer** - PHP dependency manager
+
+## 🏗️ Modular Structure
+
+The script is organized into modular components for better maintainability:
+
+- **`install.sh`** - Main installation script
+- **`modules/utils.sh`** - Utility functions (logging, error handling, prerequisites)
+- **`modules/nginx.sh`** - Nginx installation and configuration
+- **`modules/php.sh`** - PHP 8.4 installation and extensions
+- **`modules/mysql.sh`** - MySQL 8 installation
+- **`modules/composer.sh`** - Composer installation
+- **`modules/configuration.sh`** - Nginx-PHP integration and final setup
+- **`test_modules.sh`** - Test script to verify modular structure
 
 ### PHP Extensions Installed
 
@@ -57,10 +70,10 @@ If you prefer to install manually:
    cd lemp_stack
    ```
 
-2. **Make the script executable:**
+2. **Test the modular structure (optional):**
 
    ```bash
-   chmod +x install.sh
+   ./test_modules.sh
    ```
 
 3. **Run the installation script:**
