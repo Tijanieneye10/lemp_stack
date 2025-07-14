@@ -194,7 +194,7 @@ The script provides colored output with timestamps:
 4. Test thoroughly
 5. Submit a pull request
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License.
 
