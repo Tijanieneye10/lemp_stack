@@ -2,7 +2,7 @@
 
 A comprehensive bash script to automatically install and configure a LEMP (Linux, Nginx, MySQL, PHP) stack on Ubuntu/Debian servers.
 
-## 🚀 Quick Install
+## Quick Install
 
 Run this command on your Ubuntu server to install the LEMP stack:
 
@@ -16,7 +16,7 @@ curl -fsSL https://raw.githubusercontent.com/tijanieneye10/lemp_stack/main/dist/
 curl -fsSL https://raw.githubusercontent.com/tijanieneye10/lemp_stack/main/dist/install.sh | sudo bash -s 8.4
 ```
 
-## 📋 What's Included
+## What's Included
 
 This script installs and configures:
 
@@ -25,7 +25,7 @@ This script installs and configures:
 - **MySQL 8** - Database server
 - **Composer** - PHP dependency manager
 
-## 🏗️ Modular Structure
+## Modular Structure
 
 The script is organized into modular components for better maintainability:
 
@@ -65,7 +65,7 @@ The script is organized into modular components for better maintainability:
 - Internet connection
 - At least 1GB of available disk space
 
-## 🐘 PHP Version Selection
+## PHP Version Selection
 
 The script supports PHP versions 8.2, 8.3, and 8.4:
 
@@ -83,7 +83,7 @@ sudo ./install.sh 8.3    # PHP 8.3
 sudo ./install.sh 8.4    # PHP 8.4
 ```
 
-## 📦 Manual Installation
+## Manual Installation
 
 If you prefer to install manually:
 
@@ -112,7 +112,7 @@ If you prefer to install manually:
    sudo ./install.sh 8.4
    ```
 
-## 🔧 Post-Installation Steps
+## Post-Installation Steps
 
 After the script completes, you should:
 
@@ -132,14 +132,14 @@ After the script completes, you should:
    sudo rm /var/www/html/index.php
    ```
 
-## 📁 Default Configuration
+## Default Configuration
 
 - **Web root:** `/var/www/html`
 - **Nginx config:** `/etc/nginx/sites-available/default`
 - **PHP-FPM socket:** `/var/run/php/php8.4-fpm.sock`
 - **MySQL data:** `/var/lib/mysql`
 
-## 🔍 Verification
+## Verification
 
 Check if services are running:
 
@@ -157,7 +157,7 @@ sudo systemctl status mysql
 composer --version
 ```
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -178,7 +178,7 @@ composer --version
    - Check socket file: `ls -la /var/run/php/php8.4-fpm.sock`
    - Restart service: `sudo systemctl restart php8.4-fpm`
 
-## 📝 Logs
+## Logs
 
 The script provides colored output with timestamps:
 
@@ -186,7 +186,7 @@ The script provides colored output with timestamps:
 - 🔴 **Red:** Error messages
 - 🟡 **Yellow:** Warning messages
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch
@@ -198,7 +198,7 @@ The script provides colored output with timestamps:
 
 This project is licensed under the MIT License.
 
-## 👨‍💻 Author
+## Author
 
 **Tijani Usman**
 
@@ -210,6 +210,6 @@ This project is licensed under the MIT License.
 
 This script is provided for educational and development purposes. Always test in a development environment before using in production. The author is not responsible for any data loss or system issues that may occur.
 
-## 🔄 Updates
+## Updates
 
 - **v1.0.0** - Initial release with PHP 8.4, MySQL 8, Nginx, and Composer
