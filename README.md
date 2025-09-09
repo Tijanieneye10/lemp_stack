@@ -56,7 +56,6 @@ The script is organized into modular components for better maintainability:
 - `php8.4-igbinary` - Igbinary support
 - `php8.4-redis` - Redis support
 - `php8.4-memcached` - Memcached support
-- `php8.4-xdebug` - Xdebug for debugging
 
 ## 🛠️ Prerequisites
 
