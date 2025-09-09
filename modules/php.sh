@@ -24,7 +24,6 @@ install_php() {
         php${php_version}-igbinary \
         php${php_version}-redis \
         php${php_version}-memcached \
-        php${php_version}-xdebug
     
     # Start and enable PHP-FPM service
     systemctl start php${php_version}-fpm
