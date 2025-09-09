@@ -208,7 +208,7 @@ This project is licensed under the MIT License.
 
 ## ⚠️ Disclaimer
 
-This script is provided for educational and development purposes. Always test in a development environment before using in production. The author is not responsible for any data loss or system issues that may occur.
+Always test in a development environment before using in production. The author is not responsible for any data loss or system issues that may occur.
 
 ## Updates
 
